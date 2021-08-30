@@ -1,0 +1,44 @@
+
+// page info
+
+.info {
+    display: flex;  
+  }
+  
+  .info .info__item {
+    width: 270px;
+    margin-right: 30px;
+  }
+  
+  .info__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background: $tertiary-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .info .info__item:last-child {
+    margin-right: 0px;
+  }
+  
+  .info__heading {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-primary;
+  }
+  
+  .info__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-secondary;
+  }
+  
