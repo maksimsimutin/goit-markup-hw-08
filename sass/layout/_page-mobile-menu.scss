@@ -1,0 +1,15 @@
+.menu-toggle {
+    display: inline-flex;
+}
+
+.menu-toggle .icon-cross {
+    display: none;
+}
+
+.menu-toggle.is-open .icon-cross {
+    display: block;
+}
+
+.menu-toggle.is-open .icon-menu {
+    display: none;
+}
