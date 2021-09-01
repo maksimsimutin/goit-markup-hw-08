@@ -48,13 +48,26 @@ header .container {
      
     
     &__list {
-      margin-left: 93px;
-      display: flex;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em; 
-
+       margin-left: 93px;
+       display: flex;
+       font-weight: 500;
+       font-size: 14px;
+       line-height: 1.14;
+       letter-spacing: 0.02em;
+      
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+      
+      // @media  screen and (min-width: 768px) {
+      //  margin-left: 93px;
+      //  display: flex;
+      //  font-weight: 500;
+      //  font-size: 14px;
+      //  line-height: 1.14;
+      //  letter-spacing: 0.02em;
+      // }
+      
       
     }
 
@@ -72,6 +85,7 @@ header .container {
       padding: 32px 0px;
       color: $text-primary;
       transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
     }
 
     &__list &__link:hover,
@@ -117,6 +131,10 @@ header .container {
       font-weight: 500;
       color: $text-secondary;
       transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+      
+    }
+     @media screen and (max-width: 767px) {
+      display: none;
     }
     
     
