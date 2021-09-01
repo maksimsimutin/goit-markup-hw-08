@@ -32,6 +32,8 @@ header .container {
   .navigation {
     display: flex;
     align-items: center;
+    
+
 
     &__logo {
       padding-top: 24px;
@@ -43,7 +45,8 @@ header .container {
       letter-spacing: 0.03em;
       color: $text-primary;
     }
-
+     
+    
     &__list {
       margin-left: 93px;
       display: flex;
@@ -51,6 +54,8 @@ header .container {
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em; 
+
+      
     }
 
     &__list &__item {
