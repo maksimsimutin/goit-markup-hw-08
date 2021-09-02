@@ -1075,8 +1075,16 @@ header .container {
 }
 
 .section-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section-team__heading {
   font-weight: 700;
