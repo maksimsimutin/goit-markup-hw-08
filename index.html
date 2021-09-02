@@ -29,13 +29,13 @@
                 <ul class="contacts list">
                     <li class="contacts__item">   
                         <a class="contacts__link link" href="mailto:info@devstudio.com">
-                            <svg width="16" height="12" class="contacts__icon">
+                            <svg width="16" height="12" class="contacts__icon-mail">
                                 <use href="./images/sprite.svg#icon-envelope"></use>
                             </svg>info@devstudio.com</a>
                         </li>
                         <li class="contacts__item">
                             <a class="contacts__link link" href="tel:+380961111111">
-                                <svg width="10" height="16" class="contacts__icon">
+                                <svg width="10" height="16" class="contacts__icon-smartphone">
                                     <use href="./images/sprite.svg#icon-smartphone"></use>
                                 </svg> +38 096 111 11 11</a> 
                             </li>
@@ -55,16 +55,16 @@
         
         <!--Hero-->
         
-        <!-- <section class="section-hero">
+        <section class="section-hero">
         <div class="container">
             <h1 class="section-hero__heading">Эффективные решения для вашего бизнеса</h1>
             <button class="section-hero__btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-        </section> -->
+        </section> 
     
         <!--Info-->
         
-        <!-- <section class="section">    
+        <section class="section-info">    
             <div class="container">
                 <h2 hidden>Наши задачи</h2>
                 <ul class="info list">
@@ -106,39 +106,90 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section> 
     
         <!--work-->
     
-        <!-- <section class="section section-work">
+         <section class="section-work">
         <div class="container">
             <h2 class="section-work__heading">Чем мы занимаемся</h2>
             <ul class="section-work__list list">
-                <li class="section-work__item">            
+                <li class="section-work__item"> 
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/img1.webp    1x,
+                            ./images/img1@2x.webp 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/img1.jpg    1x,
+                            ./images/img1@2x.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                        />                                 
                     <img class="section-work__img" src="./images/img1.jpg" 
                     alt="Верстка" 
                     width="370"/>
+                    </picture>
                     <h3 class="section-work__heading-choese">Десктопные приложения</h3>
                 </li>
                 <li class="section-work__item">
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/img2.webp    1x,
+                            ./images/img2@2x.webp 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/img2.jpg    1x,
+                            ./images/img2@2x.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                        />                       
                     <img class="section-work__img" src="./images/img2.jpg" 
                     alt="Програмирование" 
-                    width="370"/>               
+                    width="370"/> 
+                    </picture>              
                     <h3 class="section-work__heading-choese">Мобильные приложения</h3>
                 </li>
                 <li class="section-work__item">
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/img3.webp    1x,
+                            ./images/img3@2x.webp 2x
+                          "
+                          media="(min-width: 1200px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="
+                            ./images/img3.jpg    1x,
+                            ./images/img3@2x.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                        />
                     <img class="section-work__img" src="./images/img3.jpg"
                     alt="Дизайн" 
                     width="370"/>
+                    </picture>
                     <h3 class="section-work__heading-choese">Дизайнерские решения</h3>
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section> 
     
         <!--Team-->
     
-        <!-- <section class="section section-team">
+         <section class="section section-team">
         <div class="container">
             <h2 class="section-team__heading">Наша команда</h2>
             <ul class="section-team__list list">
@@ -300,7 +351,7 @@
             </li>
         </ul>
     </div>
-</section> -->
+</section> 
 
         <!--customer-->
 

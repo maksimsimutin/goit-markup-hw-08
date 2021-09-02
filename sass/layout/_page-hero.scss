@@ -1,30 +1,73 @@
 
   // section hero
 
-  .section {
-    padding: 94px 0px;
+   .section {
+     padding: 94px 0px;
   }
-  
-  .section-hero { 
-    padding: 200px 0px;
-    margin: 0px auto;
-    max-width: 1600px;
-    height: 600px;
-    background-color: $text-primary;
-    background-image: linear-gradient( 
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4) ),
-     url(../images/hero.jpg);
+
+  .section-hero {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-mobile.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     
-    // & .container {
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    // }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-mobile@2x.jpg);
+    }
+
+    @media  screen and (min-width: 480px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/Hero/hero-mobile.jpg);
+        background-size: 480px 400px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+    screen and (min-resolution: 192dpi) and (min-width: 480px),
+    screen and (min-resolution: 2dppx) and (min-width: 480px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-mobile@2x.jpg);
+            
+    }
+
+    @media  screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero-tablet.jpg);
+        background-size: 768px 400px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px)  {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-tablet@2x.jpg);
+    }
     
+    @media  screen and (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero-desktop.jpg);
+        background-size: 1600px 600px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px)  {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-desktop@2x.jpg);
+    }
     &__heading {
       max-width: 710px;
       margin-bottom: 30px;
@@ -35,6 +78,11 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: $primary-color;
+
+      @media screen and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 1.61;
+      }
     }
     
     &__btn {
@@ -54,12 +102,36 @@
       color: $tertiary-color;
       transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
     }
-  
+    
     
     &__btn:hover,
     &__btn:focus {
         background-color: $quaternary-color;
         cursor: pointer;
     }
-  }
+}
+  
+  // .section-hero { 
+  //   padding: 200px 0px;
+  //   margin: 0px auto;
+  //   max-width: 1600px;
+  //   height: 600px;
+  //   background-color: $text-primary;
+  //   background-image: linear-gradient( 
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4) ),
+  //    url(../images/hero.jpg);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+    
+
+
+    // & .container {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
+    
+  
   

@@ -122,19 +122,51 @@ header .container {
   .contacts {
     display: flex;
    
-    &__icon {
-      margin-right: 10px;
+    &__icon-mail {
+      margin-right: 10px;    
       transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+    }
+
+    .contacts__icon-smartphone {
+      margin-right: 10px;      
+      transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 768px) {
+        width: 10px;
+        height: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+
     }
     
     @media (min-width: 768px) and (max-width: 1199px) {
       flex-direction: column; 
     }
 
-    &__link:hover &__icon,
-    &__link:focus &__icon {
+    &__link:hover &__icon-mail,
+    &__link:focus &__icon-mail {
       fill: $quaternary-color;
     }
+
+    &__link:hover &__icon-smartphone,
+    &__link:focus &__icon-smartphone {
+      fill: $quaternary-color;
+    }
+
     
     & &__item {
       margin-right: 50px;
@@ -151,8 +183,9 @@ header .container {
     &__link {
       display: flex;
       align-items: center;
-      padding-top: 32px;
-      padding-bottom: 32px;
+      
+      // padding-top: 32px;
+      // padding-bottom: 32px;
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em;

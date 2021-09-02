@@ -81,6 +81,17 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 118px 30px;
+}
+@media screen and (min-width: 768px) {
+  .section-hero .container {
+    padding: 118px 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero .container {
+    padding: 200px 252px;
+  }
 }
 .footer .container {
   display: -webkit-box;
@@ -218,10 +229,39 @@ header .container {
   display: -ms-flexbox;
   display: flex;
 }
-.contacts__icon {
+.contacts__icon-mail {
   margin-right: 10px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contacts .contacts__icon-smartphone {
+  margin-right: 10px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .contacts .contacts__icon-smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts .contacts__icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .contacts {
@@ -231,7 +271,10 @@ header .container {
             flex-direction: column;
   }
 }
-.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
+.contacts__link:hover .contacts__icon-mail, .contacts__link:focus .contacts__icon-mail {
+  fill: #2196f3;
+}
+.contacts__link:hover .contacts__icon-smartphone, .contacts__link:focus .contacts__icon-smartphone {
   fill: #2196f3;
 }
 .contacts .contacts__item {
@@ -252,8 +295,6 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -453,16 +494,57 @@ header .container {
 }
 
 .section-hero {
-  padding: 200px 0px;
-  margin: 0px auto;
-  max-width: 1600px;
-  height: 600px;
-  background-color: #212121;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero/hero-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-mobile.jpg);
+    background-size: 480px 400px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+    background-size: 768px 400px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
+    background-size: 1600px 600px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop@2x.jpg);
+  }
 }
 .section-hero__heading {
   max-width: 710px;
@@ -474,6 +556,12 @@ header .container {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .section-hero__heading {
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 .section-hero__btn {
   display: inline-block;
@@ -536,12 +624,21 @@ header .container {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 528px;
-  min-height: 580px;
+  overflow: scroll;
+  width: 95%;
+  height: 95%;
+  max-width: 450px;
+  max-height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 580px;
+  }
 }
 .modal__output {
   position: absolute;
@@ -581,10 +678,16 @@ header .container {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 .modal__form-container {
   display: -webkit-box;
@@ -744,10 +847,21 @@ header .container {
 }
 .modal .checkbox__label {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 10px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .modal .checkbox__label {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal .checkbox__label:hover {
   cursor: pointer;
@@ -776,8 +890,8 @@ header .container {
 }
 .modal .checkbox__icon {
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   margin-right: 7px;
   border: 2px solid #000000;
   -webkit-box-sizing: border-box;
@@ -786,6 +900,12 @@ header .container {
   background-image: none;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal .checkbox__icon {
+    width: 16px;
+    height: 15px;
+  }
 }
 .modal .checkbox__input:checked + .checkbox__icon {
   background-color: #2196f3;
@@ -823,15 +943,45 @@ header .container {
   cursor: pointer;
 }
 
+.section-info {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section-info {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: -15px;
+}
+@media screen and (min-width: 768px) {
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .info .info__item {
-  width: 270px;
-  margin-right: 30px;
+  display: inline-block;
+  margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  .info .info__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info .info__item {
+    max-width: 270px;
+  }
 }
 
 .info__icon {
@@ -841,17 +991,11 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.info .info__item:last-child {
-  margin-right: 0px;
 }
 
 .info__heading {
@@ -863,6 +1007,11 @@ header .container {
   text-transform: uppercase;
   color: #212121;
 }
+@media screen and (max-width: 767px) {
+  .info__heading {
+    text-align: center;
+  }
+}
 
 .info__text {
   font-weight: 400;
@@ -873,7 +1022,12 @@ header .container {
 }
 
 .section-work {
-  padding-top: 0px;
+  padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
 }
 .section-work__heading {
   margin-bottom: 50px;
