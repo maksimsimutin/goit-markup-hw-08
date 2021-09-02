@@ -1,21 +1,22 @@
 .section-team {
   padding-top: 60px;
   padding-bottom: 60px;
-    background-color: $tertiary-color;
-    text-align: center;
+  background-color: $tertiary-color;
+  text-align: center;
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+  @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+  }
+
+    
+    
    
     &__heading {
       font-weight: 700;
       font-size: 36px;
       line-height:1.16;
       letter-spacing: 0.03em;
-
-      
     }
     
     &__list {
