@@ -148,17 +148,6 @@ header .container {
   }
 }
 
-.line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-}
-
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,6 +194,16 @@ header .container {
 .navigation__list .navigation__item {
   position: relative;
   margin-right: 50px;
+}
+.navigation__list .navigation__item .line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
 }
 .navigation__list .navigation__item:last-child {
   margin-right: 0px;
@@ -277,16 +276,18 @@ header .container {
 .contacts__link:hover .contacts__icon-smartphone, .contacts__link:focus .contacts__icon-smartphone {
   fill: #2196f3;
 }
-.contacts .contacts__item {
-  margin-right: 50px;
-}
 @media (min-width: 768px) and (max-width: 1199px) {
-  .contacts .contacts__item {
+  .contacts__item {
     margin-right: 0;
   }
 }
-.contacts .contacts__item:last-child {
-  margin-right: 0px;
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 21px;
+  }
 }
 .contacts__link {
   display: -webkit-box;
@@ -361,6 +362,9 @@ header .container {
   border: none;
   border-radius: 50%;
   outline: none;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: #2196f3;
 }
 
 .js-close-menu {
@@ -509,8 +513,8 @@ header .container {
 }
 @media screen and (min-width: 480px) {
   .section-hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Hero/hero-mobile.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero/hero-mobile.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
     background-size: 480px 400px;
   }
 }
@@ -1133,6 +1137,11 @@ header .container {
     margin-bottom: 0;
   }
 }
+.section-team__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .section-team__heading .section-team__heading-name {
   color: #212121;
 }
@@ -1294,9 +1303,32 @@ header .container {
   border-color: #2196f3;
 }
 
-footer {
+.footer {
   padding: 60px 0px;
   background-color: #2f303a;
+}
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .address {
@@ -1344,30 +1376,6 @@ footer {
   color: #2196f3;
 }
 
-.footer__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #ffffff;
-}
-@media screen and (min-width: 1200px) {
-  .footer__logo {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
 .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1383,7 +1391,6 @@ footer {
     margin-top: 0;
   }
 }
-
 .footer-social__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1405,7 +1412,6 @@ footer {
             justify-content: flex-start;
   }
 }
-
 .footer-social__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1418,11 +1424,9 @@ footer {
           align-items: flex-start;
   list-style: none;
 }
-
 .footer-social__item:not(:last-child) {
   margin-right: 10px;
 }
-
 .footer-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1441,12 +1445,9 @@ footer {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-social__link:hover,
-.footer-social__link:focus {
+.footer-social__link:hover, .footer-social__link:focus {
   background-color: #2196f3;
 }
-
 .footer-social__icon {
   fill: #ffffff;
 }
@@ -1503,13 +1504,18 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {
@@ -1675,20 +1681,17 @@ footer {
   color: #f5f4fa;
 }
 
-@media screen and (min-width: 768px) {
-  .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-left: -30px;
-  }
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
   .content__item {
-    margin-left: 30px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
   }
@@ -1701,7 +1704,7 @@ footer {
 }
 
 .content__item {
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1788,6 +1791,11 @@ footer {
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
+}
+
+.product-thumb__image {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .content__name {

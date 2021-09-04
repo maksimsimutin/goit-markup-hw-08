@@ -21,16 +21,16 @@ header .container {
   }
   
   
-  .line::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 4px;
-    background: $quaternary-color;
-    border-radius: 2px
-  }
+  // .line::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   bottom: 0px;
+  //   width: 100%;
+  //   height: 4px;
+  //   background: $quaternary-color;
+  //   border-radius: 2px
+  // }
   
   // navigation
   
@@ -93,6 +93,17 @@ header .container {
     &__list &__item {
       position: relative;
       margin-right: 50px;
+
+      .line::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 4px;
+        background: $quaternary-color;
+        border-radius: 2px
+      }
     }
     
     &__list &__item:last-child {
@@ -168,17 +179,24 @@ header .container {
     }
 
     
-    & &__item {
-      margin-right: 50px;
+     &__item {
+      // margin-right: 50px;
       @media (min-width: 768px) and (max-width: 1199px) {
         margin-right: 0;
       }
 
+      &:not(:last-child) {
+        margin-right: 50px;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          margin-bottom: 21px;
+          
+        }
+        
+      }
+
     }
     
-    & &__item:last-child {
-       margin-right: 0px;
-     }
+     
     
     &__link {
       display: flex;

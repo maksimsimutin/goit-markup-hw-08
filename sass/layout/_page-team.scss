@@ -50,6 +50,11 @@
     margin-bottom: 0;
   }
     }
+
+    &__img {
+      width: 100%;
+      object-fit: cover;
+    }
     
     // &__list &__item {
     //   margin-right: 30px;
