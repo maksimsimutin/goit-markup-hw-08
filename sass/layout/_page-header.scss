@@ -8,19 +8,19 @@ header .container {
 
     @media screen and (min-width: 768px) {
       max-height: 80px;
-      
+
     }
-    
+
     // .container {
     //   margin-left: auto;
     //   margin-right: auto;
     //   padding-left: 15px;
     //   padding-right: 15px;
-    //   width: 1200px; 
+    //   width: 1200px;
     // }
   }
-  
-  
+
+
   // .line::after {
   //   content: "";
   //   display: block;
@@ -31,13 +31,13 @@ header .container {
   //   background: $quaternary-color;
   //   border-radius: 2px
   // }
-  
+
   // navigation
-  
+
   .navigation {
     display: flex;
     align-items: center;
-    
+
 
 
     &__logo {
@@ -55,13 +55,13 @@ header .container {
 
       @media screen and (min-width: 768px) {
         padding: 24px 0;
-        
-        
+
+
       }
 
     }
-     
-    
+
+
     &__list {
        margin-left: 93px;
        display: flex;
@@ -69,15 +69,15 @@ header .container {
        font-size: 14px;
        line-height: 1.14;
        letter-spacing: 0.02em;
-      
+
       @media screen and (max-width: 767px) {
         display: none;
       }
       @media screen and (min-width: 768px) {
         margin-left: 88px;
-        
+
       }
-      
+
       // @media  screen and (min-width: 768px) {
       //  margin-left: 93px;
       //  display: flex;
@@ -86,8 +86,8 @@ header .container {
       //  line-height: 1.14;
       //  letter-spacing: 0.02em;
       // }
-      
-      
+
+
     }
 
     &__list &__item {
@@ -105,11 +105,11 @@ header .container {
         border-radius: 2px
       }
     }
-    
+
     &__list &__item:last-child {
       margin-right: 0px;
     }
-    
+
     &__link {
       display: block;
       padding: 32px 0px;
@@ -123,18 +123,18 @@ header .container {
       color: $quaternary-color;
     }
   }
-  
+
   .logo-color {
     color: $quaternary-color;
   }
-  
-  // contacts 
-  
+
+  // contacts
+
   .contacts {
     display: flex;
-   
+
     &__icon-mail {
-      margin-right: 10px;    
+      margin-right: 10px;
       transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
 
       @media screen and (min-width: 768px) {
@@ -149,7 +149,7 @@ header .container {
     }
 
     .contacts__icon-smartphone {
-      margin-right: 10px;      
+      margin-right: 10px;
       transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
 
       @media screen and (min-width: 768px) {
@@ -163,9 +163,9 @@ header .container {
     }
 
     }
-    
+
     @media (min-width: 768px) and (max-width: 1199px) {
-      flex-direction: column; 
+      flex-direction: column;
     }
 
     &__link:hover &__icon-mail,
@@ -178,7 +178,7 @@ header .container {
       fill: $quaternary-color;
     }
 
-    
+
      &__item {
       // margin-right: 50px;
       @media (min-width: 768px) and (max-width: 1199px) {
@@ -186,22 +186,22 @@ header .container {
       }
 
       &:not(:last-child) {
-        margin-right: 50px;
+        // margin-right: 50px;
         @media screen and (min-width: 768px) and (max-width: 1199px) {
           margin-bottom: 21px;
-          
+
         }
-        
+
       }
 
     }
-    
-     
-    
+
+
+
     &__link {
       display: flex;
       align-items: center;
-      
+
       // padding-top: 32px;
       // padding-bottom: 32px;
       font-size: 14px;
@@ -215,35 +215,31 @@ header .container {
       font-size: 12px;
       line-height: 1.16;
       }
-      
+
     }
     @media screen and (max-width: 767px) {
       display: none;
     }
      @media screen and (min-width: 768px) {
-      margin-left: 84px; 
+      margin-left: 84px;
      }
-   
+
     @media screen and (min-width: 1200px) {
       padding-top: 32px;
       padding-bottom: 32px;
-    
-      
+
+
     }
-    
-    
+
+
     &__link:hover,
     &__link:focus {
         color: $quaternary-color;
     }
-    
-    
+
+
     & &__link:hover,
     & &__link:focus {
       color: $quaternary-color;
     }
   }
-
-  
-  
-  

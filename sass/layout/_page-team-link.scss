@@ -2,25 +2,25 @@
 // team
 
 .team {
-    padding-top: 16px;
-    padding-bottom: 30px;
-    
+    margin-top: 16px;
+    // padding-bottom: 30px;
+
     display: flex;
     justify-content: center;
-    
+
     &__social-link {
       // padding-bottom: 30px;
-      
-     
+
+
       display: flex;
       width: 44px;
       height: 44px;
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1); 
+      transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     &__social-link:hover,
     &__social-link:focus {
       background-color: $quaternary-color;
@@ -36,9 +36,8 @@
     &__social-item {
       margin-right: 10px;
     }
-    
+
     &__social-list  &__social-item:last-child {
       margin-right: 0px;
     }
   }
-  

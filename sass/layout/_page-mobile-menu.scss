@@ -8,7 +8,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 999;
-  
+
     transform: translateX(100%);
     transition: transform 250ms $time-hover;
   }
@@ -18,8 +18,8 @@
   }
 
   .menu-toggle {
-      
-     
+
+
     // min-height: 40px;
     // min-width: 40px;
     // align-items: center;
@@ -36,7 +36,7 @@
     }
   }
 
-  
+
 //   .header {
 //     position: relative;
 //   }
@@ -52,14 +52,14 @@
      right: 2px;
      margin: 0;
   }
-  
+
   @media (min-width: 768px) {
     .menu-toggle,
     .menu-container {
       display: none;
     }
   }
-  
+
   .menu-toggle__close,
   .menu-toggle__menu {
   fill: currentColor;
@@ -79,7 +79,7 @@
     width: 100%;
     height: 100%;
     padding: 48px 40px;
-    
+
   }
   .mobile-socials {
     display: block;
@@ -89,7 +89,7 @@
     display: block;
     padding-bottom: 64px;
   }
-  
+
   .mobile-menu__item {
     display: block;
     padding-top: 16px;
@@ -111,15 +111,19 @@
   .mobile-menu__title {
       color: $text-primary;
   }
-  
+
   .mobile-menu__tel {
     font-family:  Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: #2196f3;
+
+ @media screen and (min-width: 440px) {
+  font-size: 34px;
+ }
   }
   .mobile-menu__mail {
     font-weight: 500;
@@ -146,10 +150,14 @@
     font-family:  Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
+
+    @media screen  and (min-width: 440px) {
+      font-size: 18px;
+    }
   }
   .mobile-menu--active {
     color: $quaternary-color;
@@ -218,7 +226,7 @@
 //     position: absolute;
 //     top: 16px;
 //     right: 16px;
-    
+
 // }
 
 

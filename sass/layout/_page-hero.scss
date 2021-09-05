@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -27,7 +27,7 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
         url(../images/hero-mobile.jpg);
-        background-size: 480px 400px;
+        // background-size: 480px 400px;
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
@@ -36,14 +36,14 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/hero-mobile@2x.jpg);
-            
+
     }
 
     @media  screen and (min-width: 768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
         url(../images/hero-tablet.jpg);
-        background-size: 768px 400px;
+        // background-size: 768px 400px;
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -53,7 +53,7 @@
                 rgba(47, 48, 58, 0.4)),
             url(../images/hero-tablet@2x.jpg);
     }
-    
+
     @media  screen and (min-width: 1200px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
@@ -84,7 +84,7 @@
         line-height: 1.61;
       }
     }
-    
+
     &__btn {
       display: inline-block;
       border: none;
@@ -102,29 +102,29 @@
       color: $tertiary-color;
       transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
-    
+
+
     &__btn:hover,
     &__btn:focus {
         background-color: $quaternary-color;
         cursor: pointer;
     }
 }
-  
-  // .section-hero { 
+
+  // .section-hero {
   //   padding: 200px 0px;
   //   margin: 0px auto;
   //   max-width: 1600px;
   //   height: 600px;
   //   background-color: $text-primary;
-  //   background-image: linear-gradient( 
+  //   background-image: linear-gradient(
   //     rgba(47, 48, 58, 0.4),
   //     rgba(47, 48, 58, 0.4) ),
   //    url(../images/hero.jpg);
   //   background-repeat: no-repeat;
   //   background-position: center;
   //   background-size: cover;
-    
+
 
 
     // & .container {
@@ -132,6 +132,3 @@
     //   flex-direction: column;
     //   align-items: center;
     // }
-    
-  
-  

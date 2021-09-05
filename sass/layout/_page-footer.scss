@@ -5,12 +5,12 @@
   padding: 60px 0px;
   background-color: $secondary-color;
 
-  &__logo { 
+  &__logo {
     // display: block;
     display: flex;
     justify-content: center;
-    
-    margin-bottom: 20px; 
+
+    margin-bottom: 20px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -18,11 +18,11 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: $primary-color;
-  
+
     @media screen and (min-width: 1200px) {
-      
+
       justify-content: flex-start;
-      
+
     }
   }
 }
@@ -36,7 +36,7 @@
   font-size: 14px;
   line-height: 1,71;
   letter-spacing: 0.03em;
-  
+
   &__map {
     // display: block;
     text-decoration: none;
@@ -46,14 +46,14 @@
     transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
 
   }
-  
+
   &__map:hover,
   &__map:focus {
     color: $quaternary-color;
   }
-  
+
   &__link {
-    
+
     // display: block;
     display: flex;
     justify-content: center;
@@ -65,36 +65,36 @@
 
     @media screen and (min-width: 1200px) {
       justify-content: flex-start;
-      
+
     }
   }
-  
+
   &__link:hover,
   &__link:focus {
     color: $quaternary-color;
   }
 }
-  
+
   // .footer .container {
-  //   display: flex; 
+  //   display: flex;
   //   align-items: baseline;
   //   justify-content: space-between;
   // }
-  
-  
-  
-  
-  
+
+
+
+
+
 //footer social
 
   .footer-social {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    // margin-top: 60px;
 
     @media screen and (min-width: 1200px) {
       margin-top: 0;
-      
+
     }
 
     &__title {
@@ -106,10 +106,10 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: $primary-color;
-  
+
       @media  screen and (min-width: 1200px) {
         justify-content: flex-start;
-        
+
       }
     }
     &__list {
@@ -144,7 +144,7 @@
     fill: $primary-color;
   }
   }
-  
+
   // .footer-social__title {
   //   display: flex;
   //   justify-content: center;
@@ -157,21 +157,21 @@
 
   //   @media  screen and (min-width: 1200px) {
   //     justify-content: flex-start;
-      
+
   //   }
   // }
-  
+
   // .footer-social__list {
   //   display: flex;
   //   justify-content: center;
   //   align-items: flex-start;
   //   list-style: none;
   // }
-  
+
   // .footer-social__item:not(:last-child) {
   //   margin-right: 10px;
   // }
-  
+
   // .footer-social__link {
   //   display: flex;
   //   justify-content: center;
@@ -183,12 +183,12 @@
   //   cursor: pointer;
   //   transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
   // }
-  
+
   // .footer-social__link:hover,
   // .footer-social__link:focus {
   //   background-color: $quaternary-color;
   // }
-  
+
   // .footer-social__icon {
   //   fill: $primary-color;
   // }
@@ -202,22 +202,22 @@
 
    @media  screen and (min-width: 1200px) {
      margin-top: 20px;
-     
+
    }
   }
-  
+
   .footer__form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    @media screen and (min-width: 1200px) { 
+
+    @media screen and (min-width: 1200px) {
       flex-direction: row;
       align-items: baseline;
-      
+
     }
   }
-  
+
   .footer__input {
     margin-right: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -228,7 +228,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-  
+
     width: 100%;
     height: 50px;
     font-weight: 400;
@@ -242,10 +242,10 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 358px;           
+      width: 358px;
     }
   }
-  
+
   .footer__input::placeholder {
     font-weight: 400;
     font-size: 16px;
@@ -253,7 +253,7 @@
     letter-spacing: 0.03em;
     color: $input-color;
   }
-  
+
   .footer__btn {
     display: flex;
     align-items: center;
@@ -266,28 +266,28 @@
     padding: 10px 28px;
 
     margin-top: 20px;
-  
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
     color: $primary-color;
-  
+
     transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1200px) {
       margin-top: 0;
-      
+
     }
   }
-  
+
   .footer__btn:hover,
   .footer__btn:focus {
     background-color: $footer-btn;
     cursor: pointer;
   }
-  
+
   .footer__submit-icon {
     fill: currentColor;
     margin-left: 10px;
